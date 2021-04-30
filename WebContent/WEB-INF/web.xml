@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>SessionDemo</display-name>
+  
+  <servlet>
+  	<servlet-name>SourceServlet</servlet-name>
+  	<servlet-class>com.roshan.servlets.SourceServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SourceServlet</servlet-name>
+  	<url-pattern>/SourceServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TargetServlet</servlet-name>
+  	<servlet-class>com.roshan.servlets.TargetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TargetServlet</servlet-name>
+  	<url-pattern>/TargetServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
